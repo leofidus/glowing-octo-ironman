@@ -39,11 +39,11 @@ inline std::string EncodeBase58(const unsigned char* pbegin, const unsigned char
 
     // Convert big endian data to little endian
     // Extra zero at the end make sure bignum will interpret as a positive number
-    std::vector<unsigned char> vchTmp(pend-pbegin+1, 0);
+       std::vector<unsigned char> vchTmp(pend-pbegin+1, 0);
     reverse_copy(pbegin, pend, vchTmp.begin());
 
     // Convert little endian data to bignum
-    CBigNum bn;
+      CBigNum bn;
     bn.setvch(vchTmp);
 
     // Convert bignum to std::string
