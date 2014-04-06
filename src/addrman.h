@@ -50,6 +50,7 @@ public:
         CAddress* pthis = (CAddress*)(this);
         READWRITE(*pthis);
         READWRITE(source);
+        
         READWRITE(nLastSuccess);
         READWRITE(nAttempts);
     )
