@@ -35,6 +35,7 @@ inline std::string EncodeBase58(const unsigned char* pbegin, const unsigned char
     CAutoBN_CTX pctx;
     CBigNum bn58 = 58;
     CBigNum bn0 = 0;
+    
 
     // Convert big endian data to little endian
     // Extra zero at the end make sure bignum will interpret as a positive number
