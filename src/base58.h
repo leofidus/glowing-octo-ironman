@@ -33,8 +33,8 @@ static const char* pszBase58 = "123456789ABCDEFGHJKLMNPQRSTUVWXYZabcdefghijkmnop
 inline std::string EncodeBase58(const unsigned char* pbegin, const unsigned char* pend)
 {
     CAutoBN_CTX pctx;
-    CBigNum bn58 = 58;
-    CBigNum bn0 = 0;
+        CBigNum bn58 = 58;
+        CBigNum bn0 = 0;
     
 
     // Convert big endian data to little endian
